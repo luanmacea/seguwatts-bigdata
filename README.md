@@ -99,13 +99,14 @@ O DAG `seguwatts_coleta` inicia sozinho e processa os dias a partir de 25/10/202
 
 ### 4. Rodar no Databricks
 
-1. Importe a pasta `databricks/` no workspace e rode `00_setup.sql`.
-2. Crie o sal do hash em um secret `seguwatts/lgpd_sal` ou preencha o widget `lgpd_sal` no notebook `03_ouro`. Não salve esse valor no repositório.
-3. Envie o conteúdo de `lotes/lote_1/` ao Volume `workspace.gs.chegada`, mantendo as pastas.
-4. Rode `01_bronze` e anote as contagens.
-5. Envie `lotes/lote_2/`, rode `01_bronze` e anote de novo.
-6. Rode `01_bronze` mais uma vez sem lote novo: as contagens não mudam.
-7. Rode `02_prata`, `03_ouro`, `04_consultas` e `05_exportar_mvp`.
+1. Crie um Git folder com este repositório e rode `databricks/00_setup.sql`.
+2. Rode `scripts/compactar_lotes.py lote_1 lote_2` e envie os `.zip` do lote 1 ao Volume `workspace.gs.chegada` pela interface. Os lotes são compactados porque o navegador limita o tamanho do envio.
+3. Rode `00b_extrair_lote` com os arquivos do lote 1 e depois `01_bronze`. Anote as contagens.
+4. Envie o `.zip` do lote 2, rode `00b_extrair_lote` com ele e rode `01_bronze`. Anote de novo.
+5. Rode `01_bronze` mais uma vez sem lote novo: as contagens não mudam.
+6. Rode `02_prata`, `03_ouro`, `04_consultas` e `05_exportar_mvp`.
+
+O sal do hash fica no secret `seguwatts/lgpd_sal`, no widget `lgpd_sal` ou, se nenhum existir, em um arquivo gerado no Volume. Ele nunca vai para o repositório.
 
 ### 5. Abrir a tela
 

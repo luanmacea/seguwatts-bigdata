@@ -3,9 +3,12 @@
 # MAGIC # SeguWatts: Ouro
 # MAGIC Modelo dimensional, proteção LGPD, detecção de defeitos e tabelas consumidas pelo MVP.
 # MAGIC
-# MAGIC O sal do hash nunca fica no código. Defina o secret `seguwatts/lgpd_sal` ou preencha o widget.
+# MAGIC O sal do hash nunca fica no código: vem do secret `seguwatts/lgpd_sal`, do widget ou de um arquivo gerado no Volume.
 
 # COMMAND ----------
+
+import os
+from secrets import token_hex
 
 from pyspark.sql import functions as F
 
@@ -21,13 +24,23 @@ def t(nome):
 
 
 def obter_sal():
+    """Usa o secret ou o widget; sem eles, gera um sal e o guarda no Volume, fora do repositório."""
     try:
         return dbutils.secrets.get("seguwatts", "lgpd_sal")
     except Exception:
-        sal = dbutils.widgets.get("lgpd_sal")
-        if not sal:
-            raise ValueError("Defina o secret seguwatts/lgpd_sal ou preencha o widget lgpd_sal.") from None
+        pass
+    sal = dbutils.widgets.get("lgpd_sal")
+    if sal:
         return sal
+    arquivo = f"{BASE}/_controle/lgpd_sal.txt"
+    if os.path.exists(arquivo):
+        with open(arquivo, encoding="utf-8") as entrada:
+            return entrada.read().strip()
+    sal = token_hex(32)
+    os.makedirs(os.path.dirname(arquivo), exist_ok=True)
+    with open(arquivo, "w", encoding="utf-8") as saida:
+        saida.write(sal)
+    return sal
 
 
 SAL = obter_sal()

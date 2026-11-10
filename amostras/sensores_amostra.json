@@ -1,0 +1,5 @@
+{"leitura_id":"R0001|geral|2026-09-26T00:00:00","residencia_id":"R0001","ponto":"geral","instante":"2026-09-26T00:00:00","kwh":0.083,"firmware":"1.2.0"}
+{"leitura_id":"R0001|R0001-A01|2026-09-26T00:00:00","residencia_id":"R0001","ponto":"R0001-A01","instante":"2026-09-26T00:00:00","kwh":0.0554,"firmware":"1.2.0"}
+{"leitura_id":"R0001|R0001-A08|2026-09-26T00:00:00","residencia_id":"R0001","ponto":"R0001-A08","instante":"2026-09-26T00:00:00","kwh":0.0,"firmware":"1.2.0"}
+{"leitura_id":"R0001|geral|2026-09-26T01:00:00","residencia_id":"R0001","ponto":"geral","instante":"2026-09-26T01:00:00","kwh":0.0844,"firmware":"1.2.0"}
+{"leitura_id":"R0001|R0001-A01|2026-09-26T01:00:00","residencia_id":"R0001","ponto":"R0001-A01","instante":"2026-09-26T01:00:00","kwh":0.0567,"firmware":"1.2.0"}

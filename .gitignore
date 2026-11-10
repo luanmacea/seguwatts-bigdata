@@ -1,0 +1,24 @@
+# Dados gerados pelo pipeline (amostras ficam em amostras/)
+chegada/
+lotes/
+_validacao_local/
+airflow_data/
+
+# Segredos
+.env
+*.tfvars
+
+# Python
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# Spark e Delta locais
+spark-warehouse/
+metastore_db/
+derby.log
+
+# Ferramentas locais
+.claude/
+docs/prints/_*

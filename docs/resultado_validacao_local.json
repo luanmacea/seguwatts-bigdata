@@ -1,0 +1,470 @@
+{
+ "contagens": {
+  "dim_aparelho": 966,
+  "dim_data": 192,
+  "dim_localidade": 6,
+  "dim_residencia": 100,
+  "fato_consumo_hora": 1222922,
+  "fato_rateio_ciclo": 4337,
+  "mvp_alertas_aparelho": 268,
+  "mvp_aparelhos_ciclo": 866,
+  "mvp_painel_mensal": 700,
+  "mvp_perfil_semana": 16800,
+  "prata_aparelhos": 866,
+  "prata_bandeiras": 142,
+  "prata_clima": 27648,
+  "prata_contas": 501,
+  "prata_leituras": 1222922,
+  "prata_municipios": 645,
+  "prata_residencias": 100,
+  "prata_tarifas": 66
+ },
+ "qualidade": [
+  [
+   "aparelhos",
+   "A1",
+   "Potência ausente ou não positiva",
+   0
+  ],
+  [
+   "aparelhos",
+   "DUP",
+   "Linhas repetidas pela chave (mantida a mais recente)",
+   12990
+  ],
+  [
+   "bandeiras",
+   "B1",
+   "Competência inválida",
+   0
+  ],
+  [
+   "bandeiras",
+   "B2",
+   "Adicional ausente ou negativo",
+   0
+  ],
+  [
+   "bandeiras",
+   "DUP",
+   "Linhas repetidas pela chave (mantida a mais recente)",
+   2130
+  ],
+  [
+   "clima",
+   "C1",
+   "Instante inválido",
+   0
+  ],
+  [
+   "clima",
+   "C2",
+   "Temperatura ausente ou fora de -10 a 50 °C",
+   0
+  ],
+  [
+   "clima",
+   "DUP",
+   "Linhas repetidas pela chave (mantida a mais recente)",
+   0
+  ],
+  [
+   "contas",
+   "DUP",
+   "Linhas repetidas pela chave (mantida a mais recente)",
+   0
+  ],
+  [
+   "contas",
+   "F1",
+   "kWh faturado ausente ou não positivo",
+   15
+  ],
+  [
+   "contas",
+   "F2",
+   "Datas de leitura invertidas",
+   16
+  ],
+  [
+   "leituras",
+   "DUP",
+   "Linhas repetidas pela chave (mantida a mais recente)",
+   3718
+  ],
+  [
+   "leituras",
+   "L1",
+   "kWh ausente ou não numérico",
+   4921
+  ],
+  [
+   "leituras",
+   "L2",
+   "kWh fora da faixa de 0 a 15 por hora",
+   3386
+  ],
+  [
+   "leituras",
+   "L3",
+   "Residência não cadastrada",
+   192
+  ],
+  [
+   "leituras",
+   "L4",
+   "Ponto de medição não cadastrado",
+   192
+  ],
+  [
+   "leituras",
+   "L5",
+   "Instante inválido",
+   0
+  ],
+  [
+   "municipios",
+   "DUP",
+   "Linhas repetidas pela chave (mantida a mais recente)",
+   9675
+  ],
+  [
+   "municipios",
+   "M1",
+   "Código IBGE ausente ou inválido",
+   0
+  ],
+  [
+   "residencias",
+   "D1",
+   "Residência sem município",
+   0
+  ],
+  [
+   "residencias",
+   "DUP",
+   "Linhas repetidas pela chave (mantida a mais recente)",
+   1500
+  ],
+  [
+   "tarifas",
+   "DUP",
+   "Linhas repetidas pela chave (mantida a mais recente)",
+   2046
+  ],
+  [
+   "tarifas",
+   "T1",
+   "Vigência ausente ou invertida",
+   0
+  ],
+  [
+   "tarifas",
+   "T2",
+   "Tarifa ausente ou não positiva",
+   0
+  ]
+ ],
+ "aceite": {
+  "kwh_geral": 149169.49,
+  "kwh_fato": 149169.49,
+  "tabelas_ouro": [
+   "dim_aparelho",
+   "dim_data",
+   "dim_localidade",
+   "dim_residencia",
+   "fato_consumo_hora",
+   "fato_rateio_ciclo",
+   "mvp_alertas_aparelho",
+   "mvp_aparelhos_ciclo",
+   "mvp_painel_mensal",
+   "mvp_perfil_semana",
+   "ouro_diagnostico_aparelho_dia",
+   "ouro_validacao_deteccao"
+  ]
+ },
+ "consultas": {
+  "q1": [
+   {
+    "dia_semana": "Quarta",
+    "hora": 19,
+    "kwh_medio_por_casa": 0.84
+   },
+   {
+    "dia_semana": "Segunda",
+    "hora": 19,
+    "kwh_medio_por_casa": 0.838
+   },
+   {
+    "dia_semana": "Sábado",
+    "hora": 19,
+    "kwh_medio_por_casa": 0.828
+   },
+   {
+    "dia_semana": "Domingo",
+    "hora": 19,
+    "kwh_medio_por_casa": 0.827
+   },
+   {
+    "dia_semana": "Quinta",
+    "hora": 19,
+    "kwh_medio_por_casa": 0.824
+   },
+   {
+    "dia_semana": "Terça",
+    "hora": 19,
+    "kwh_medio_por_casa": 0.819
+   },
+   {
+    "dia_semana": "Sexta",
+    "hora": 19,
+    "kwh_medio_por_casa": 0.818
+   },
+   {
+    "dia_semana": "Domingo",
+    "hora": 20,
+    "kwh_medio_por_casa": 0.789
+   },
+   {
+    "dia_semana": "Sábado",
+    "hora": 21,
+    "kwh_medio_por_casa": 0.769
+   },
+   {
+    "dia_semana": "Sábado",
+    "hora": 20,
+    "kwh_medio_por_casa": 0.761
+   }
+  ],
+  "q2": [
+   {
+    "ano_mes": "2026-05",
+    "bandeira": "Amarela",
+    "temperatura_media": 19.2,
+    "kwh_dia_por_casa": 7.65,
+    "custo_30_dias_por_casa": 177.25
+   },
+   {
+    "ano_mes": "2026-06",
+    "bandeira": "Amarela",
+    "temperatura_media": 16.9,
+    "kwh_dia_por_casa": 7.55,
+    "custo_30_dias_por_casa": 174.99
+   },
+   {
+    "ano_mes": "2026-07",
+    "bandeira": "Amarela",
+    "temperatura_media": 17.6,
+    "kwh_dia_por_casa": 7.7,
+    "custo_30_dias_por_casa": 182.13
+   },
+   {
+    "ano_mes": "2026-08",
+    "bandeira": "Amarela",
+    "temperatura_media": 20.7,
+    "kwh_dia_por_casa": 8.08,
+    "custo_30_dias_por_casa": 191.55
+   },
+   {
+    "ano_mes": "2026-09",
+    "bandeira": "Amarela",
+    "temperatura_media": 19.4,
+    "kwh_dia_por_casa": 7.97,
+    "custo_30_dias_por_casa": 189.04
+   },
+   {
+    "ano_mes": "2026-10",
+    "bandeira": "Verde",
+    "temperatura_media": 20.4,
+    "kwh_dia_por_casa": 7.7,
+    "custo_30_dias_por_casa": 178.48
+   },
+   {
+    "ano_mes": "2026-11",
+    "bandeira": "Não publicada",
+    "temperatura_media": 22.5,
+    "kwh_dia_por_casa": 8.12,
+    "custo_30_dias_por_casa": 189.15
+   }
+  ],
+  "q3": [
+   {
+    "rotulo": "Chuveiro",
+    "origem_medicao": "estimado",
+    "kwh_total": 43930.0,
+    "custo_total_rs": 34369.56,
+    "participacao_pct": 36.8
+   },
+   {
+    "rotulo": "Geladeira",
+    "origem_medicao": "medido",
+    "kwh_total": 21127.0,
+    "custo_total_rs": 16498.43,
+    "participacao_pct": 17.7
+   },
+   {
+    "rotulo": "Aparelhos em espera",
+    "origem_medicao": "estimado",
+    "kwh_total": 11656.0,
+    "custo_total_rs": 9118.27,
+    "participacao_pct": 9.8
+   },
+   {
+    "rotulo": "Freezer",
+    "origem_medicao": "medido",
+    "kwh_total": 9060.0,
+    "custo_total_rs": 7083.29,
+    "participacao_pct": 7.6
+   },
+   {
+    "rotulo": "Iluminação",
+    "origem_medicao": "estimado",
+    "kwh_total": 8153.0,
+    "custo_total_rs": 6378.64,
+    "participacao_pct": 6.8
+   },
+   {
+    "rotulo": "TV",
+    "origem_medicao": "estimado",
+    "kwh_total": 7531.0,
+    "custo_total_rs": 5890.05,
+    "participacao_pct": 6.3
+   },
+   {
+    "rotulo": "Computador",
+    "origem_medicao": "estimado",
+    "kwh_total": 4453.0,
+    "custo_total_rs": 3484.41,
+    "participacao_pct": 3.7
+   },
+   {
+    "rotulo": "Máquina de lavar",
+    "origem_medicao": "estimado",
+    "kwh_total": 4026.0,
+    "custo_total_rs": 3150.91,
+    "participacao_pct": 3.4
+   },
+   {
+    "rotulo": "Ar-condicionado",
+    "origem_medicao": "medido",
+    "kwh_total": 3958.0,
+    "custo_total_rs": 3065.49,
+    "participacao_pct": 3.3
+   },
+   {
+    "rotulo": "Micro-ondas",
+    "origem_medicao": "estimado",
+    "kwh_total": 3855.0,
+    "custo_total_rs": 3018.21,
+    "participacao_pct": 3.2
+   },
+   {
+    "rotulo": "Ferro de passar",
+    "origem_medicao": "estimado",
+    "kwh_total": 1626.0,
+    "custo_total_rs": 1274.96,
+    "participacao_pct": 1.4
+   }
+  ],
+  "q4": [
+   {
+    "rotulo": "Ar-condicionado",
+    "status": "normal",
+    "aparelhos": 22,
+    "excesso_medio_pct": null,
+    "rs_excesso_medio_mes": null
+   },
+   {
+    "rotulo": "Ar-condicionado",
+    "status": "sem_base",
+    "aparelhos": 16,
+    "excesso_medio_pct": null,
+    "rs_excesso_medio_mes": null
+   },
+   {
+    "rotulo": "Demais aparelhos",
+    "status": "atencao",
+    "aparelhos": 2,
+    "excesso_medio_pct": 33.0,
+    "rs_excesso_medio_mes": 44.52
+   },
+   {
+    "rotulo": "Demais aparelhos",
+    "status": "critico",
+    "aparelhos": 3,
+    "excesso_medio_pct": 68.0,
+    "rs_excesso_medio_mes": 68.57
+   },
+   {
+    "rotulo": "Demais aparelhos",
+    "status": "normal",
+    "aparelhos": 95,
+    "excesso_medio_pct": null,
+    "rs_excesso_medio_mes": null
+   },
+   {
+    "rotulo": "Freezer",
+    "status": "atencao",
+    "aparelhos": 3,
+    "excesso_medio_pct": 32.0,
+    "rs_excesso_medio_mes": 14.16
+   },
+   {
+    "rotulo": "Freezer",
+    "status": "critico",
+    "aparelhos": 2,
+    "excesso_medio_pct": 38.0,
+    "rs_excesso_medio_mes": 18.8
+   },
+   {
+    "rotulo": "Freezer",
+    "status": "normal",
+    "aparelhos": 25,
+    "excesso_medio_pct": null,
+    "rs_excesso_medio_mes": null
+   },
+   {
+    "rotulo": "Geladeira",
+    "status": "atencao",
+    "aparelhos": 8,
+    "excesso_medio_pct": 31.0,
+    "rs_excesso_medio_mes": 10.28
+   },
+   {
+    "rotulo": "Geladeira",
+    "status": "critico",
+    "aparelhos": 12,
+    "excesso_medio_pct": 41.0,
+    "rs_excesso_medio_mes": 13.73
+   },
+   {
+    "rotulo": "Geladeira",
+    "status": "normal",
+    "aparelhos": 80,
+    "excesso_medio_pct": null,
+    "rs_excesso_medio_mes": null
+   }
+  ],
+  "q5": [
+   {
+    "casas_com_alerta": 30,
+    "kwh_evitaveis_mes": 799.4,
+    "rs_evitaveis_mes": 621.8,
+    "rs_evitaveis_ano": 7461.6,
+    "economia_media_por_casa_mes": 20.73,
+    "reducao_pct_nessas_casas": 10.5
+   }
+  ],
+  "q6": [
+   {
+    "vp": 31,
+    "fp": 0,
+    "fn": 0,
+    "vn": 221,
+    "precisao_pct": 100.0,
+    "cobertura_pct": 100.0,
+    "dias_medios_ate_detectar": 9.9
+   }
+  ]
+ }
+}

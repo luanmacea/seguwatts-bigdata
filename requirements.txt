@@ -1,2 +1,5 @@
 requests>=2.32
 pytest>=8.0
+playwright>=1.48
+pypdfium2>=4.30
+pillow>=10.0

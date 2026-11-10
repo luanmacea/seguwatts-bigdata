@@ -25,6 +25,8 @@ Global Solution 2026.2, FIAP, Engenharia de Software, 4º ano. Disciplina Big Da
 | **Fontes de dados** | Open-Meteo, ANEEL, IBGE e dados simulados de sensores, contas e cadastro |
 | **ODS** | 10, 11 e 13 |
 
+**Relatório da disciplina:** [docs/relatorio_bigdata_seguwatts.pdf](docs/relatorio_bigdata_seguwatts.pdf), com os prints do Airflow e do Databricks em `docs/prints/`.
+
 ## Arquitetura
 
 ```mermaid
